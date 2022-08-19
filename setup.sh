@@ -32,6 +32,10 @@ install() {
   mv $APM_TMP_DIR/lnxrouter $APM_PKG_INSTALL_DIR/
   chmod +x $APM_PKG_INSTALL_DIR/lnxrouter
   ln -s $APM_PKG_INSTALL_DIR/lnxrouter $APM_PKG_BIN_DIR/
+  echo "This package provides the following command:
+  - lnxrouter
+  
+  Check https://github.com/garywill/linux-router for usage"
 }
 
 uninstall() {
